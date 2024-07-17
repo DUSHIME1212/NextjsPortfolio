@@ -13,7 +13,7 @@ const Page = () => {
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
 
-    const sendEmail = (e) => {
+    const sendEmail = (e:any) => {
         e.preventDefault()
         setSuccess("");
         setError("");
