@@ -1,8 +1,24 @@
+"use client"
 import React from 'react'
 import Link from "next/link";
 import {Navs} from "~/util/utils";
+import {useGSAP} from "@gsap/react";
+import {gsap} from "gsap";
 
 const Navbar = () => {
+
+    useGSAP(() => {
+        gsap.from('.capitalize',{
+            y:20,
+            opacity:0,
+            stagger:0.1,
+        })
+        gsap.from('.capitalize',{
+            y:0,
+            opacity:1,
+        })
+    })
+
     return (
         <header className={'px-8 md:px-16 lg:px-32'}>
             <nav className={' flex justify-between items-center h-16'}>

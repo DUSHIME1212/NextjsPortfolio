@@ -2,8 +2,22 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Footer from "~/app/_components/Footer";
+import {useGSAP} from "@gsap/react";
+import {gsap} from "gsap";
 
 const Page = () => {
+
+    useGSAP(() => {
+        gsap.from('h1',{
+            y:50,
+            opacity:0,
+            stagger:0.2,
+        })
+        gsap.to('h1',{
+            y:0,
+            opacity:1,
+        })
+    })
 
     const [name1, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -57,8 +71,8 @@ const Page = () => {
 
     return (
         <div className={'min-h-screen flex flex-col gap-4 pt-32 w-full'}>
-            <div className={'flex gap-8 flex-col'}>
-                <h3 className={'text-3xl'}>SEND ME A MESSAGE</h3>
+            <div className={'flex gap-8 overflow-clip flex-col'}>
+                <h1 className={'text-3xl'}>SEND ME A MESSAGE</h1>
                 <h1 className={'text-7xl'}>Send me a message and I'll get back to you in next 48 hours</h1>
             </div>
             <div className={'size-full my-8 bg-purple-200 p-8 rounded-xl px-8'}>
@@ -84,7 +98,7 @@ const Page = () => {
                         name="message"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        rows="4"
+                        rows={4}
                         className={'bg-white outline-none p-4 rounded-xl w-full'}
                         placeholder={'Your message'}
                     />

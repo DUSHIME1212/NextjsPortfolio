@@ -1,9 +1,26 @@
+"use client"
 import React from 'react'
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import Link from "next/link";
 import Image from "next/image";
 import {Projects} from "~/util/utils";
 
 const LandingComponent = () => {
+
+    useGSAP(() =>{
+        gsap.from('div',{
+            opacity:0,
+            y:50,
+            stagger:0.1,
+        })
+        gsap.to('div',{
+            opacity:1,
+            duration:2,
+            stagger:0.4,
+            ease: "power2.inOut",
+        })
+    })
 
     const profile= '/profile.jpg'
 
