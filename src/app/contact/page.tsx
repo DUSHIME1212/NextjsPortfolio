@@ -9,9 +9,11 @@ const Page = () => {
 
     useGSAP(() => {
         gsap.from('h1',{
-            y:50,
+            y:70,
             opacity:0,
             stagger:0.2,
+            filter:'blur(56px)',
+            delay:0.5,
         })
         gsap.to('h1',{
             y:0,
@@ -71,11 +73,11 @@ const Page = () => {
 
     return (
         <div className={'min-h-screen flex flex-col gap-4 pt-32 w-full'}>
-            <div className={'flex gap-8 overflow-clip flex-col'}>
+            <div className={'flex gap-8 flex-col'}>
                 <h1 className={'text-3xl'}>SEND ME A MESSAGE</h1>
                 <h1 className={'text-7xl'}>Send me a message and I'll get back to you in next 48 hours</h1>
             </div>
-            <div className={'size-full my-8 bg-purple-200 p-8 rounded-xl px-8'}>
+            <div className={'size-full my-8 bg-green-200 p-8 rounded-xl px-8'}>
                 <form onSubmit={sendEmail} action="" className={'flex flex-col my-8 gap-4'}>
                     <input
                         type="text"

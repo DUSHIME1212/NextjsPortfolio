@@ -14,7 +14,7 @@ const Footer = () => {
                         <div>
                             {
                                 channels.map((item, i) => (
-                                    <a href={item.link} key={i} className={`xl:w-1/3 w-full p-4 group flex justify-between rounded-xl bg-pink-50`}>
+                                    <a href={item.link} key={i} className={`xl:w-1/3 w-full p-4 group flex justify-between rounded-xl bg-green-50`}>
                                         <div className={'flex group-hover:scale-90 duration-700 items-center gap-4'}>
                                             <Image src={item.logo? item.logo: '/img.png'} alt={''} width={18} height={18}/>
                                             <h1>{item?.title}</h1>
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {/*right*/}
-                <div className={'md:w-1/2 w-full flex flex-wrap flex-row gap-2 '}>
+                <div className={'md:w-1/2 w-full flex flex-wrap flex-col md:flex-row gap-2 '}>
                     <div className={'xl:w-1/2 w-full p-4'}>
                         <h1 className={'text-3xl'}>Navigation</h1>
                         <div className={'flex gap-2 p-2 flex-col'}>
@@ -43,7 +43,7 @@ const Footer = () => {
                         <ul className={'gap-2 mt-4 flex flex-col'}>
                             {
                                 CaseStudies.map((item,i) => (
-                                    <Link href={''}>{item.title}</Link>
+                                    <Link key={i} href={''}>{item.title}</Link>
                                 ))
                             }
                         </ul>
@@ -51,7 +51,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={'flex py-6 flex-wrap gap-4 justify-between'}>
-                <p>© 2024 – Hosanna DUSHIME <Link href={'https://www.instagram.com/@djmatt_360'}>@djmatt_360</Link> </p>
+                <p>© 2024 – Hosanna DUSHIME <Link className={'font-italic'} href={'https://www.instagram.com/@djmatt_360'}><i>@djmatt_360</i></Link> </p>
                 <span>
                     <ul className={'flex gap-4'}>
                         <li>Privacy Policy</li>

@@ -16,11 +16,14 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className={'relative min-h-screen px-8 md:px-16 lg:px-32'}>
+      <body className={'relative overflow-x-hidden min-h-screen px-8 md:px-16 lg:px-32'}>
       <div className={'fixed left-0 px-8 md:px-16 lg:px-32 z-50 bg-white bg-opacity-60 backdrop-blur-md w-full'}>
           <Navbar/>
       </div>
           {children}
+      <div className={'fixed top-0 left-0 -z-10'}>
+          <Background/>
+      </div>
       </body>
     </html>
   );

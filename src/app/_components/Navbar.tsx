@@ -12,6 +12,8 @@ const Navbar = () => {
             y:20,
             opacity:0,
             stagger:0.1,
+            filter:"blur(64px)",
+            duration:1,
         })
         gsap.from('.capitalize',{
             y:0,

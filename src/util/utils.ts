@@ -1,24 +1,32 @@
 export const Navs=[
     {
+        title:'About',
+        path:'/#about'
+    },
+    {
         title:'works',
-        path:'/works'
+        path:'/#works'
     },
     {
         title:'tools',
-        path:'/tools'
+        path:'/#tools'
     },
     {
         title:'skills',
-        path:'/skills'
+        path:'/'
     },
     {
         title:'testimonial',
-        path:'/testimonial'
+        path:'/#testimonial'
     },
     {
         title:'blog',
-        path:'/blog'
-    }
+        path:'/'
+    },
+    {
+        title:'pricing',
+        path:'/#pricing'
+    },
 ]
 
 export const Projects = [
