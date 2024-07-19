@@ -29,7 +29,7 @@ const Navbar = () => {
                     <div className={'xl:flex gap-2 hidden'}>
                         {
                             Navs.map((item, i) => (
-                                <Link href={item.path} className={'capitalize'}>{item.title}</Link>
+                                <Link key={i} href={item.path} className={'capitalize'}>{item.title}</Link>
                             ))
                         }
                     </div>

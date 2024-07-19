@@ -1,4 +1,3 @@
-import Link from "next/link";
 import LandingComponent from "~/app/_components/LandingComponent";
 import FavoriteTools from "~/app/_components/FavoriteTools";
 import WorkingSteps from "~/app/_components/WorkingSteps";

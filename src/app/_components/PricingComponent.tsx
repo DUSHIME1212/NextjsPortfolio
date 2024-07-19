@@ -1,5 +1,5 @@
 import React from 'react'
-import {pricing, testimonials} from "~/util/utils";
+import {pricing} from "~/util/utils";
 import Link from "next/link";
 
 const PricingComponent = () => {

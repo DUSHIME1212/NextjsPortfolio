@@ -23,7 +23,6 @@ const Page = () => {
 
     const [name1, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState("");
@@ -61,7 +60,6 @@ const Page = () => {
             setSuccess("Message sent successfully!");
             setName("");
             setEmail("");
-            setPhone("");
             setMessage("");
         }, (err) => {
             setIsLoading(false);
