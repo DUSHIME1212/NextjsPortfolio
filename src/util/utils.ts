@@ -5,7 +5,7 @@ export const Navs=[
     },
     {
         title:'works',
-        path:'/#works'
+        path:'/projects'
     },
     {
         title:'tools',
@@ -32,35 +32,39 @@ export const Navs=[
 export const Projects = [
     {
         logo:'Logo1',
-        title:'UX/UI DESIGN',
-        desc:'World\'s first AI-powered scheduling app',
-        img:'/img.png',
+        title:'Bounce App (UX/UI DESIGN)',
+        desc:'Bounce is a ride-sharing platform that has transformed the transportation landscape in Rwanda.',
+        img:'/project/831_2x_shots_so.png',
         bg:'bg-blue-200',
-        top:"top-2"
+        top:"top-2",
+        link:'https://www.figma.com/design/5lL2RIRZHJAGSjnTdZASvK/BOUNCE?node-id=577-2776&t=AAcwHElJMANEQDDM-1',
     },
     {
         logo:'Logo2',
-        title:'WEB DESIGN',
-        desc:'Designed & implemented new booking platform',
-        img:'/img.png',
+        title:'Goodlife (Rwanda) - A Platform for Compassion and Change',
+        desc:'Goodlife is a charitable platform that has transformed the way Rwandans connect with and support charitable causes. By providing a centralized platform for donations, volunteer opportunities, and awareness campaigns, Goodlife has become a hub for compassion and social change in Rwanda. ',
+        img:'/project/467shots_so.png',
         bg:'bg-pink-200',
-        top: "top-4"
+        top: "top-4",
+        link:'https://www.figma.com/design/vtRK8yx0Z55z63kao8SXCq/Goodlife?node-id=0-1&t=gszal58IZb1Y4Fcs-1',
     },
     {
         logo:'Logo3',
-        title:'UX/UI DESIGN',
-        desc:'Making the world more mindful',
-        img:'/img.png',
+        title:'Gusatickets (Rwanda) - A Symphony of Shared Music Experiences',
+        desc:'Gusatickets is a music ticketing platform that has revolutionized the way music lovers in Rwanda experience live concerts and performances.',
+        img:'/project/746shots_so.png',
         bg:'bg-green-200',
-        top: "top-6"
+        top: "top-6",
+        link:'https://www.figma.com/design/UDW1mppyhLjKpXoSNqCg62/Google-Cerificate-UX-Design?node-id=0-1&t=RMIxZ1afpDeesf7a-1',
     },
     {
         logo:'Logo4',
-        title:'WEB DESIGN',
-        desc:'Restructuring the website to optimize conversion',
-        img:'/img.png',
+        title:'Campedia (Rwanda) - A Campus Community Hub',
+        desc:'Campedia is a new online platform designed specifically for college students in Rwanda. By providing a space for students to connect, share information, and participate in campus activities, Campedia aims to enhance the college experience and foster a sense of community.',
+        img:'/project/506_2x_shots_so.png',
         bg:'bg-blue-200',
-        top: "top-8"
+        top: "top-8",
+        link:'https://www.figma.com/design/ruTuEQcHRRnBqkTxmR88Zc/Campeedia?node-id=0-1&t=iu4TkQgwioHJwLxU-1',
     }
 ]
 

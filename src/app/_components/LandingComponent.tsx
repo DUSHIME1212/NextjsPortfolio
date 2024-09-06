@@ -46,17 +46,18 @@ const LandingComponent = () => {
             </div>
             <div className={'w-full mt-36 min-h-96'} id={'works'}>
                 {Projects.map((item, i) => (
-                    <div key={i} className={`bg-white ${item.bg} sticky top-24 min-h-96 rounded-[48px] flex flex-col md:flex-row items-center py-16 md:py-32 gap-8 p-2 md:p-16 justify-center size-full`}>
-                        <div className='w-1/2 flex text-center md:text-left w-full flex-col gap-4'>
+                    <Link href={item.link} key={i} className={`bg-white ${item.bg} sticky top-24 min-h-96 rounded-[48px] flex flex-col md:flex-row items-center py-16 md:py-32 gap-8 px-4 md:px-16 justify-center size-full`}>
+                        <div className='w-1/2 flex text-center md:text-left flex-col gap-4'>
                             <h4 className='text-4xl tracking-tight'>{item.title}</h4>
-                            <h1 className='text-2xl tracking-tighter'>{item.desc}</h1>
+                            <h1 className='text-2xl opacity-20 tracking-tighter'>{item.desc}</h1>
                         </div>
-                        <div className='size-1/2 flex relative justify-center'>
-                            <Image src={item.img} className='object-contain' alt='' height={278} width={148} />
+                        <div className='md:w-1/2 w-full min-h-96 flex relative rounded-xl overflow-clip justify-center'>
+                            <Image src={item.img} className='object-cover' alt='' fill />
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
+            <Link href={'/projects'} className='w-full mt-4 rounded-3xl p-4 text-green-600 hover:bg-green-500 duration-700 hover:text-white text-2xl text-center border border-black'>More Projects</Link>
         </div>
     )
 }
