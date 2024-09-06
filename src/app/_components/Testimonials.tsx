@@ -9,7 +9,7 @@ const Testimonials = () => {
                 <div className={'text-center grid gap-8 my-4 place-items-center'}>
                     <h3 className={'size-fit text-xl bg-green-100 px-4 rounded-full p-2'}>Testimonials 💡</h3>
                     <h1 className={'text-3xl'}>
-                        Don't believe me - hear it <br/>
+                        Don&apos;t believe me - hear it <br/>
                         from the others
                     </h1>
                 </div>

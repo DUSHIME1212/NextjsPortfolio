@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState,FormEvent } from 'react';
 import emailjs from 'emailjs-com';
 import Footer from "~/app/_components/Footer";
 import {useGSAP} from "@gsap/react";
@@ -28,7 +28,7 @@ const Page = () => {
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
 
-    const sendEmail = (e:any) => {
+    const sendEmail = (e:FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setSuccess("");
         setError("");
@@ -61,6 +61,8 @@ const Page = () => {
             setName("");
             setEmail("");
             setMessage("");
+            console.log(response);
+            
         }, (err) => {
             setIsLoading(false);
             setError("Failed to send message, please try again later.");
@@ -73,7 +75,7 @@ const Page = () => {
         <div className={'min-h-screen flex flex-col gap-4 pt-32 w-full'}>
             <div className={'flex gap-8 flex-col'}>
                 <h1 className={'text-3xl'}>SEND ME A MESSAGE</h1>
-                <h1 className={'text-7xl'}>Send me a message and I'll get back to you in next 48 hours</h1>
+                <h1 className={'text-7xl'}>Send me a message and I&apos;ll get back to you in next 48 hours</h1>
             </div>
             <div className={'size-full my-8 bg-green-200 p-8 rounded-xl px-8'}>
                 <form onSubmit={sendEmail} action="" className={'flex flex-col my-8 gap-4'}>
