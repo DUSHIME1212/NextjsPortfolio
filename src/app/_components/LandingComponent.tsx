@@ -32,7 +32,7 @@ const LandingComponent = () => {
                 <div className={'h-96 md:rounded-[118px] overflow-clip'}>
                     <Image src={profile} alt={''} width={578} height={200}/>
                 </div>
-                <h1 className={'text-3xl text-center'}>Hi I'm Dushime Aime 👋</h1>
+                <h1 className={'text-3xl text-center'}>Hi I&apos;m Dushime Aime 👋</h1>
                 <p className={'text-center text-2xl md:text-7xl tracking-tighter'}>I design apps, and websites that blows your mind</p>
                 <div className={'text-lg flex flex-col md:flex-row justify-center items-center md:gap-2'}>
                     <button className={'p-4 w-full md:size-fit px-8 scale-75 md:scale-100 hover:scale-90 duration-700 border-2 border-black rounded-full'}>About

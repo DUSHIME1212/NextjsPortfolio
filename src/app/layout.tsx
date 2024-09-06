@@ -2,7 +2,6 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
-import Background from "~/app/_components/Background";
 import Navbar from "~/app/_components/Navbar";
 
 export const metadata: Metadata = {
@@ -21,9 +20,6 @@ export default function RootLayout({
           <Navbar/>
       </div>
           {children}
-      <div className={'fixed top-0 left-0 -z-10'}>
-          <Background/>
-      </div>
       </body>
     </html>
   );
