@@ -32,8 +32,8 @@ const LandingComponent = () => {
                 <div id='anime' className={'h-96 md:rounded-[118px] overflow-clip'}>
                     <Image src={profile} alt={''} width={578} height={200}/>
                 </div>
-                <h1 className={'text-3xl text-center'}>Hi I&apos;m Dushime Aime 👋</h1>
-                <p className={'text-center text-2xl md:text-7xl tracking-tighter'}>I design apps, and websites that blows your mind</p>
+                <h1 id='anime'  className={'text-3xl text-center'}>Hi I&apos;m Dushime Aime 👋</h1>
+                <p  id='anime' className={'text-center text-2xl md:text-7xl tracking-tighter'}>I design apps, and websites that blows your mind</p>
                 <div className={'text-lg flex flex-col md:flex-row justify-center items-center md:gap-2'}>
                     <button className={'p-4 w-full md:size-fit px-8 scale-75 md:scale-100 hover:scale-90 duration-700 border-2 border-black rounded-full'}>About
                         me
@@ -46,7 +46,7 @@ const LandingComponent = () => {
             </div>
             <div className={'w-full mt-36 min-h-96'} id={'works'}>
                 {Projects.slice(0,3).map((item, i) => (
-                    <Link href={item.link} key={i} className={`bg-white ${item.bg} sticky top-24 min-h-96 rounded-[48px] flex flex-col md:flex-row items-center py-16 md:py-32 gap-8 px-4 md:px-16 justify-center size-full`}>
+                    <Link id='anime' href={item.link} key={i} className={`bg-white ${item.bg} sticky top-24 min-h-96 rounded-[48px] flex flex-col md:flex-row items-center py-16 md:py-32 gap-8 px-4 md:px-16 justify-center size-full`}>
                         <div className='w-full md:w-1/2 flex text-center md:text-left flex-col gap-4'>
                             <h4 className='text-4xl tracking-tight'>{item.title}</h4>
                             <h1 className='text-2xl opacity-20 tracking-tighter'>{item.desc}</h1>

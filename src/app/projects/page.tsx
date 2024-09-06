@@ -12,7 +12,7 @@ const page = () => {
           className={"mt-36 flex min-h-96 w-full flex-col gap-4"}
           id={"works"}
         >
-            <h1 className="text-5xl tracking-tight text-black">Recent Projects</h1>
+            <h1 className="text-5xl mb-12 tracking-tight text-black">Recent Projects</h1>
           {Projects.map((item, i) => (
             <div
               key={i}
