@@ -64,7 +64,7 @@ export const Projects = [
     }
 ]
 
-export let tools=[
+export const tools=[
     {
         logo:'/figma logo.png',
         name:"Figma",
@@ -137,29 +137,22 @@ export const testimonials=[
     {
         logo:'/figma logo.png',
         name:"-Jennifer R. - CEO Techstart",
-        desc:'"Working with Jeff was an absolute game-changer for our company. ' +
-            'Their keen eye for detail and innovative approach to product design ' +
-            'elevated our brand to new heights.'
+        desc:'Working with Jeff was an absolute game-changer for our company elevated our brand to new heights.'
     },
     {
         logo:'/framer logo.png',
         name:"-Jennifer R. - CEO Techstart",
-        desc:'"Their creativity knows no bounds, and their designs have helped us ' +
-            'differentiate ourselves in a competitive market. From concept to execution, ' +
-            'Jeff exceeded our expectations at every step of the way."'
+        desc:'Their creativity knows no bounds, and their designs have helped us differentiate ourselves in a competitive market. From concept to execution, Jeff exceeded our expectations at every step of the way.'
     },
     {
         logo:'/expressjs logo.png',
         name:"-Jennifer R. - CEO Techstart",
-        desc:'"Their creativity knows no bounds, and their designs have helped us differentiate' +
-            ' ourselves in a competitive market. From concept to execution, Jeff exceeded our ' +
-            'expectations at every step of the way."'
+        desc:'Their creativity knows no bounds, and their designs have helped us differentiate ourselves in a competitive market. From concept to execution, Jeff exceeded our expectations at every step of the way."'
     },
     {
         logo:'/Nextjs logo.png',
         name:"-Jennifer R. - CEO Techstart",
-        desc:'"Working with Jeff was an absolute game-changer for our company. Their keen eye for ' +
-            'detail and innovative approach to product design elevated our brand to new heights.'
+        desc:'Working with Jeff was an absolute game-changer for our company. Their keen eye for detail and innovative approach to product design elevated our brand to new heights.'
     }
 ]
 
@@ -203,10 +196,10 @@ export const CaseStudies = [
     {
         id: 3,
         title: 'Corporate Website Overhaul',
-        description: 'Revamping a corporate website to better align with the company’s branding and messaging.',
+        description: 'Revamping a corporate website to better align with the companys branding and messaging.',
         image: '/images/case-study-corporate-website.png',
         bgColor: 'bg-purple-200',
-        details: 'We focused on creating a clean, modern design that highlights the company’s services and achievements, leading to improved user engagement.'
+        details: 'We focused on creating a clean, modern design that highlights the companys services and achievements, leading to improved user engagement.'
     },
     {
         id: 4,
@@ -214,7 +207,7 @@ export const CaseStudies = [
         description: 'Designing an AI-powered tool to help users schedule their tasks more efficiently.',
         image: '/images/case-study-scheduling-tool.png',
         bgColor: 'bg-red-200',
-        details: 'This tool uses machine learning to analyze users’ habits and suggest optimal times for task completion, resulting in increased productivity.'
+        details: 'This tool uses machine learning to analyze users habits and suggest optimal times for task completion, resulting in increased productivity.'
     }
 ];
 
