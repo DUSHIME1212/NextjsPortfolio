@@ -9,12 +9,12 @@ import {Projects} from "~/util/utils";
 const LandingComponent = () => {
 
     useGSAP(() =>{
-        gsap.from('div',{
+        gsap.from('#anime',{
             opacity:0,
             y:50,
             stagger:0.01,
         })
-        gsap.to('div',{
+        gsap.to('#anime',{
             y:0,
             opacity:1,
             duration:2,
@@ -27,9 +27,9 @@ const LandingComponent = () => {
 
     return (
         <div
-            className={'size-full min-h-96 bg-blue-100 pb-20 mt-20 md:rounded-t-[118px] flex flex-col justify-center items-center p-2 md:px-16 xl:px-32 text-7xl'}>
+            className={'size-full min-h-96 bg-green-100 pb-20 mt-20 md:rounded-t-[118px] flex flex-col justify-center items-center p-2 md:px-16 xl:px-32 text-7xl'}>
             <div className={'flex flex-col items-center my-20 gap-8'}>
-                <div className={'h-96 md:rounded-[118px] overflow-clip'}>
+                <div id='anime' className={'h-96 md:rounded-[118px] overflow-clip'}>
                     <Image src={profile} alt={''} width={578} height={200}/>
                 </div>
                 <h1 className={'text-3xl text-center'}>Hi I&apos;m Dushime Aime 👋</h1>
@@ -57,7 +57,7 @@ const LandingComponent = () => {
                     </Link>
                 ))}
             </div>
-            <Link href={'/projects'} className='w-full mt-4 rounded-3xl p-4 text-blue-600 hover:bg-blue-500 duration-700 hover:text-white text-2xl text-center border border-black'>More Projects</Link>
+            <Link href={'/projects'} className='w-full mt-4 rounded-3xl p-4 text-green-600 hover:bg-green-500 duration-700 hover:text-white text-2xl text-center border border-green-500'>More Projects</Link>
         </div>
     )
 }

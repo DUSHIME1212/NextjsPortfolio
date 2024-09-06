@@ -10,7 +10,7 @@ const UserProfile = () => {
                     <span className={'text-5xl tracking-tighter'}>Hi, I&apos;m DUSHIME Aime! 👋</span>
                     <div className={'text-lg p-2 mt-8 flex flex-col gap-2 tracking-tight'}>
                         <p>Digital designer living in Kigali, RWANDA.</p>
-                        <p>I have 5+ years of experience in designing world-class websites and products.</p>
+                        <p>I have 3+ years of experience in designing world-class websites and products.</p>
                         <p>If you have a project in mind, dont hesitate to reach out.</p>
                     </div>
                     <Link className={'p-4 w-full md:size-fit px-8 scale-75 md:scale-100 hover:scale-90 duration-700 bg-black text-white border-2 border-black rounded-full'} href={'/contact'}>Send me message</Link>
