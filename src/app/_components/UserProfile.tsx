@@ -5,7 +5,7 @@ import Link from "next/link";
 const UserProfile = () => {
     return (
         <div className={'min-h-96 w-full p-8'}>
-            <div className={'size-full min-h-108 rounded-3xl bg-green-200 min-h-96 flex p-2 md:p-16 flex-col md:flex-row'}>
+            <div className={'size-full min-h-108 rounded-3xl border border-black bg-green-200 min-h-96 flex p-2 md:p-16 flex-col md:flex-row'}>
                 <div className={'w-full text-center md:text-left md:w-1/2 overflow-hidden flex flex-col justify-center'}>
                     <span className={'text-5xl tracking-tighter'}>Hi, I&apos;m DUSHIME Aime! 👋</span>
                     <div className={'text-lg p-2 mt-8 flex flex-col gap-2 tracking-tight'}>

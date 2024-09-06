@@ -38,6 +38,7 @@ export const Projects = [
         bg:'bg-blue-200',
         top:"top-2",
         link:'https://www.figma.com/design/5lL2RIRZHJAGSjnTdZASvK/BOUNCE?node-id=577-2776&t=AAcwHElJMANEQDDM-1',
+        prototype:'https://www.figma.com/proto/5lL2RIRZHJAGSjnTdZASvK/BOUNCE?node-id=208-2215&node-type=FRAME&t=bEFzV8S4ZknrJolz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A418&show-proto-sidebar=1'
     },
     {
         logo:'Logo2',
@@ -105,32 +106,32 @@ export const tools=[
 
 export const works=[
     {
-        logo:'/figma logo.png',
+        logo: '01',
         name:"UX Design",
         usedfor:'From wireframes to user journeys I utilise various UX techniques to deliver world-class experience.'
     },
     {
-        logo:'/framer logo.png',
+        logo:'02',
         name:"UI Design",
         usedfor:'To make outstanding UX work, it still needs polished visual design.'
     },
     {
-        logo:'/expressjs logo.png',
+        logo:'03',
         name:"UX Research",
         usedfor:'I create interactive surveys, hold user interviews, and follow user data to find out what works and what not.'
     },
     {
-        logo:'/reactjs logo.png',
+        logo:'04',
         name:"Prototyping",
         usedfor:'I build prototypes to quickly gather more feedback about products.'
     },
     {
-        logo:'/Nextjs logo.png',
+        logo:'05',
         name:"Workshops",
         usedfor:'I conduct workshops to come up with new ideas and to promote cross-functional ideation.'
     },
     {
-        logo:'/telegram logo.png',
+        logo:'06',
         name:"Collaboration",
         usedfor:'I bring positive energy to teams I work in and can communicate effectively about decisions we need to make.'
     },

@@ -18,8 +18,7 @@ const WorkingSteps = () => {
                                   className={'w-full md:w-[48%] flex gap-4 hover:bg-green-50 duration-1000 rounded-3xl min-h-fit p-8'}
                                   href={''}>
                                 <div className={'h-20 w-24 grid bg-green-100 rounded-3xl place-items-center'}>
-                                    <Image src={item.logo} alt={''} className={'object-contain'} width={28}
-                                           height={28}/>
+                                    <h1 className='text-3xl'>{item.logo}</h1>
                                 </div>
                                 <div className={'flex w-full flex-col gap-1 justify-start'}>
                                     <span className={'text-2xl'}>{item.name}</span>

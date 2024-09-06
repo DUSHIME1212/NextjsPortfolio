@@ -21,10 +21,10 @@ const PricingComponent = () => {
                                   href={''}>
                                 <div>
                                     <div>
-                                        <p className={'text-2xl duration-500 h-20 group-hover:text-white'}>{item.title}</p>
+                                        <p className={'text-2xl duration-700 h-20 group-hover:text-white'}>{item.title}</p>
                                     </div>
                                 </div>
-                                <div className={'bg-black h-[1px]'}/>
+                                <div className={'bg-black duration-700 h-20 group-hover:bg-white h-[1px]'}/>
                                 <div className={'flex flex-col gap-2 text-black duration-700 group-hover:text-white'}>
                                     {
                                         item.services.map((serv, i) => (

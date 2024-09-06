@@ -17,7 +17,7 @@ const Testimonials = () => {
                     {
                         testimonials.map((item, i) => (
                             <Link key={i}
-                                  className={'w-full md:w-[48%] group flex gap-4 hover:bg-green-500 duration-1000 rounded-3xl min-h-fit p-8'}
+                                  className={'w-full md:w-[48%] group-hover:border border-black group flex gap-4 hover:bg-green-500 duration-1000 rounded-3xl min-h-fit p-8'}
                                   href={''}>
                                 {/*<div className={'h-20 w-24 grid bg-pink-50 rounded-3xl place-items-center'}>*/}
                                 {/*    <Image src={item.logo} alt={''} className={'object-contain'} width={28}*/}
